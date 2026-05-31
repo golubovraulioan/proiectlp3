@@ -1,0 +1,28 @@
+Procesarea unui flux de date
+
+
+Descriere
+
+Acest proiect vizează automatizarea colectării și vizualizării datelor provenite din fluxuri de știri externe. Aplicația interoghează un API dedicat, procesează informațiile primite și generează reprezentări grafice pentru a evidenția dinamica și frecvența știrilor pe axa timpului.
+
+
+Structura Proiectului
+
+proiect.py: Scriptul principal ce conține implementarea fluxului de prelucrare (colectare, filtrare, stocare și vizualizare).
+flux_stiri.csv: Fișierul generat automat pentru persistența datelor.
+requirements.txt: Lista dependențelor necesare pentru rularea mediului de execuție.
+
+
+Funcționalități
+
+Interogarea API-ului NewsAPI pentru preluarea datelor în timp real.
+Analiza și sortarea datelor în funcție de relevanță și dată.
+Exportul datelor în format CSV pentru analiză ulterioară.
+Vizualizarea grafică a volumului de știri folosind Matplotlib.
+
+Instalare și Configurare
+
+Clonarea repository-ului:git clone https://github.com/utilizator/proiectlp3.git
+Instalarea bibliotecilor:pip install -r requirements.txt
+Configurarea cheii API:
+Deschideți fișierul main.py și introduceți cheia personală primită de la NewsAPI în variabila corespunzătoare:API_KEY =''
