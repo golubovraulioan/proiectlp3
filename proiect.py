@@ -6,6 +6,14 @@ Tema proiect: D6-T2 | Procesarea unui flux de date
 Surse și documentație reutilizată:
 1. Documentație NewsAPI: https://newsapi.org/docs/client-libraries/python
 2. Documentație Matplotlib: https://matplotlib.org/stable/gallery/lines_bars_and_markers/fill_between_alpha.html#sphx-glr-gallery-lines-bars-and-markers-fill-between-alpha-py
+3. Utilizarea inteligentei artificiale
+Model utilizat: Google Gemini
+Rezumatul prompturilor tehnice folosite pentru generarea și optimizarea codului:
+1)Cum folosesc biblioteca ⁠newsapi-python⁠ pentru a interoga endpoint-ul ⁠/v2/everything⁠? Generează codul pentru a filtra răspunsul JSON și a extrage doar data publicării din câmpul string ⁠publishedAt⁠ (format ISO 8601).
+2)Am extras datele sub formă de text, dar am nevoie să calculez frecvența apariției fiecărei zile. Cum folosesc structura ⁠collections.Counter⁠ pentru a număra automat elementele duplicat și a le mapa eficient într-un dicționar de tip cheie-valoare?
+3)Cum salvez dicționarul de frecvențe obținut într-un fișier local ⁠flux_stiri.csv⁠? Generează o funcție care folosește modulul ⁠csv⁠ și un context manager (⁠with open⁠), asigurându-te că datele sunt sortate cronologic înainte de scriere.
+4)Vreau să citesc datele înapoi din fișierul CSV și să le randez într-un grafic de tip linie cu ⁠matplotlib⁠. Cum setez rotația etichetelor de pe axa X la 45 de grade pentru a nu se suprapune și cum optimizez spațierea ferestrei folosind ⁠tight_layout()⁠?
+5)Algoritmul funcționează local, dar graficul este greu de urmărit vizual. Cum folosesc funcția ⁠fill_between⁠ din ⁠matplotlib⁠ pentru a umple zona de sub curbă cu o culoare transparentă (folosind parametrul alpha), respectând bunele practici de vizualizare?
 """
 
 from newsapi import NewsApiClient
